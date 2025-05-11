@@ -6,6 +6,8 @@ export default defineNuxtConfig({
     transpile: ['vuetify'],
   },
 
+  ssr: false,
+
   // https://nuxt.com/docs/api/nuxt-config#compatibilitydate
   compatibilityDate: '2024-11-01',
 
