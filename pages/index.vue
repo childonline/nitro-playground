@@ -5,6 +5,7 @@
         <v-btn @click="dbMigrate()"> db:migrate </v-btn>
         <v-btn @click="dbSeed()"> db:seed </v-btn>
         <v-btn @click="users()"> /api/users </v-btn>
+        <v-btn @click="hello()"> hello </v-btn>
       </v-col>
     </v-row>
   </v-container>
@@ -27,6 +28,11 @@ const dbSeed = async (): Promise<void> => {
 
 const users = async (): Promise<void> => {
   const { data, error } = await useFetch('/api/users')
+  console.log('JSON Response:', data.value, error.value)
+}
+
+const hello = async (): Promise<void> => {
+  const { data, error } = await useFetch('/api/hello')
   console.log('JSON Response:', data.value, error.value)
 }
 </script>
