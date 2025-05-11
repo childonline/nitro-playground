@@ -24,7 +24,7 @@ export default defineNuxtConfig({
 
   // https://nuxt.com/docs/api/nuxt-config#nitro
   nitro: {
-    preset: 'netlify',
+    preset: 'github_pages',
     experimental: {
       database: true,
       tasks: true,
